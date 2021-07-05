@@ -1,3 +1,24 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,16 +31,114 @@
 }
 
 .header {
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
 
+.header__logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+  z-index: 4;
+}
+
+.header__title {
+  font-size: 102px;
+  font-weight: bold;
+  position: relative;
+  left: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 730px;
+  z-index: 4;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  z-index: 4;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  z-index: 4;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  z-index: 3;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  width: 765px;
+  height: 608px;
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
+}
+
+.description {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text__brief {
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+}
+
+.two-columns__main-tex {
+  width: 80%;
+  min-width: 784px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+p:nth-of-type(3n) {
+  margin-bottom: 0;
+}
+
+.span-accent__paragraph {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* и элемента с модификатором вида ключ-значение */
