@@ -142,7 +142,6 @@ p:nth-of-type(3n) {
 }
 
 .section-title {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -157,7 +156,6 @@ p:nth-of-type(3n) {
 }
 
 .section-subtitle {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -173,7 +171,6 @@ p:nth-of-type(3n) {
 }
 
 .table {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -206,6 +203,65 @@ p:nth-of-type(3n) {
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
+}
+
+.feynman {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #f2f2f2;
+  min-height: 890px;
+}
+
+.feynman__head {
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 867px;
+  height: 637px;
+}
+
+.feynman__title {
+  z-index: 3;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 648px;
+}
+
+.feynman__title_text {
+  z-index: 3;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.feynman__subtitle {
+  z-index: 3;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  z-index: 4;
+  text-decoration: none;
 }
 
 /* и элемента с модификатором вида ключ-значение */
