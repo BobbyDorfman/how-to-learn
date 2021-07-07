@@ -266,7 +266,7 @@ p:nth-of-type(3n) {
 
 .kaufman {
   position: relative;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   overflow: hidden;
 }
@@ -318,7 +318,7 @@ p:nth-of-type(3n) {
 
 /* и элемента с модификатором вида ключ-значение*/
 .table__cell_theme_dark {
-  z-index: 4;
+   z-index: 4;
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -351,6 +351,101 @@ p:nth-of-type(3n) {
   position: absolute;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
   top: 0;
   right: -210px;
+  background-size: 99%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+}
+
+.footer_columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 60px 0 40px;
+}
+
+.column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+  margin: 0px;
+}
+
+.column_content_copyright_logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer_columns_footer_author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.column__content_info {
+  display: block;
+}
+
+.footer_column-heading {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer_column-links {
+  margin-bottom: 16px;
+}
+
+.footer_column-links_text {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.column__content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_social-icon {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.footer_column-link_text {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer_column-link_img {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.footer_column-link_text-decoration {
+  text-decoration: none;
 }
