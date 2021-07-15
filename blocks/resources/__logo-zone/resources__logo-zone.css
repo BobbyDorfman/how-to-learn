@@ -1,7 +1,7 @@
 .resources__logo-zone {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     list-style-type: none;
