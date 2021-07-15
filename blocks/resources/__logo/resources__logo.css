@@ -1,0 +1,18 @@
+.resources__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 270px;
+    height: 38px;
+    border: 0;
+    object-position: center;
+    list-style-type: none;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+  
+  .resources__logo:hover {
+    opacity: 0.4;
+}
